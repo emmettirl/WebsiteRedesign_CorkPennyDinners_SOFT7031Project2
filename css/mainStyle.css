@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #b44b1e;
+    --primary-color-rgb: 180, 75, 30;
+    --secondary-color: #1e87b4;
+    --secondary-color-rgb: 30, 135, 180;
+    --triadic1-colour: #1eb44b;
+    --triadic2-colour: #87b41e;
+    --analogous1-colour: #b41e3c;
+    --analogous2-colour: #b4961e;
+    --dark-bg: #343a40;
+    --dark-bg-rgb: 52, 58, 64;
+    --light-bg: #f5c2ab
+}
+
+iframe {
+    width: 100%;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2, h3, strong {
+    font-family: 'EB Garamond', Garamond, Georgia, serif;
+}
+
+#forward {
+    text-align: center;
+}
+
+#neverJudge {
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+a {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+li {
+    margin-top: 1%;
+}
+
+.mainNav {
+    background-color: var(--primary-color);
+}
+.mainNav .navbar-brand,
+.mainNav .nav-link {
+    color: white;
+}
+
+.mainNav .nav-link:hover,
+.mainNav .nav-link.active {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.navbar-brand {
+    padding-left: 2%;
+}
+
+#forward{
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+#tabList {
+    background-color: var(--primary-color);
+}
+
+#tabList button {
+    color: white;
+}
+
+#tabList button.active {
+    color: var(--primary-color);
+}
+
+.tab-content {
+    background-color: var(--dark-bg);
+    color: white;
+    padding: 3em;
+}
+
+.cover-container {
+    position: relative;
+    width: 100%;
+    padding-top: 20%;
+    background-image: url('/Media/Cover.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
+    height: auto;
+    max-height: 70%;
+    width: auto;
+}
+
+footer {
+    background-color: var(--dark-bg);
+    font-size: 0.9em;
+    color: white;
+
+}
+.footerSection {
+    text-align: center;
+}
+
+.footerSection a {
+    color: var(--secondary-color);
+}
+
+.footerSection a:hover {
+    color: white;
+}
+
+
+
+.floating-btn {
+    position: fixed;
+    right: 2em;
+    bottom: 8em;
+    z-index: 999;
+    background-color: var(--secondary-color);
+}
+
+#floating-btn2 {
+    bottom: 5em;
+}
+
+#cookie-container {
+    min-width: 60%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(var(--dark-bg-rgb),0.9);
+    color: white;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border: solid rgba(var(--secondary-color-rgb), 0.5);
+    border-bottom-style: none;
+    display: none;
+}
+
+#imageGallery {
+    background-color: var(--primary-color);
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 2em;
+}
+
+#imageGallery img {
+    border: 1px solid black;
+    filter: drop-shadow(8px 8px rgba(var(--dark-bg-rgb),0.5));
+    transition: transform 0.3s ease, z-index 0s;
+    position: relative;
+}
+
+.col-12 img {
+    width: 100%;
+    height: auto;
+}
+
+/*used to Zoom images in the gallery*/
+.img-fluid:hover {
+    transform: scale(2);
+    z-index: 1;
+}
+
+.inlineImage {
+    width : 100%;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.aboutSection {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px black;
+    border-radius: 0.5em;
+}
+
+.aboutSection:nth-of-type(2n) {
+    background-color: white;
+    color: black;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .col-sm-6 {
+        min-width: 500px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .col-md-4 {
+        min-width: 700px;
+        /* Styles for medium devices */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .col-lg-3 {
+        min-width: 900px;
+        /* Styles for large devices */
+    }
+
+    #forward{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
